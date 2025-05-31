@@ -18,12 +18,13 @@ public class CategoryServiceImp implements CategoryService{
         return categories;
     }
 
+    // this is created method
     @Override
     public void createCategories(Category category) {
         category.setCategoryId(nextId++);
         categories.add(category);
     }
-
+    // this is deleted method
     @Override
     public String deleteCategory(Long categoryId) {
         Category category = categories.stream()

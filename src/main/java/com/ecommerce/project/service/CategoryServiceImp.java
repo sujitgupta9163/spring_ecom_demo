@@ -36,7 +36,7 @@ public class CategoryServiceImp implements CategoryService{
                 categories.remove(category);
         return " Category with CategoryId : " + categoryId + " deleted successfully";
     }
-
+    // this update method
     @Override
     public Category updateCategoty(Category category, Long categoryId) {
        Optional<Category> categoryOptional = categories.stream()
